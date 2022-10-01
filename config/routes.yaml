@@ -1,0 +1,18 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+upload-image-to-server:
+    path: /image
+    controller: App\Controller\Image\Upload
+    methods: [POST]
+
+get-image-from-server:
+    path: /media/{id}
+    controller: App\Controller\Media\GetImage
+    methods: [GET]
+
+delete-image-from-server:
+    path: /media/{id}
+    controller: App\Controller\Media\DeleteImage
+    methods: [DELETE]
